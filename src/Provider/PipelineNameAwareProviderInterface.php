@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace EonX\EasyPipeline\Provider;
 
-interface PipelineNameAwareInterface
+interface PipelineNameAwareProviderInterface
 {
     public function setPipelineName(string $pipeline): void;
 }

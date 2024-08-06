@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace EonX\EasyPipeline\Provider;
 
-trait PipelineNameAwareTrait
+trait PipelineNameAwareProviderTrait
 {
     private string $pipelineName;
 

@@ -5,12 +5,14 @@ namespace EonX\EasyPipeline\Tests\Stub\Provider;
 
 use Closure;
 use EonX\EasyPipeline\Provider\MiddlewareProviderInterface;
-use EonX\EasyPipeline\Provider\PipelineNameAwareInterface;
-use EonX\EasyPipeline\Provider\PipelineNameAwareTrait;
+use EonX\EasyPipeline\Provider\PipelineNameAwareProviderInterface;
+use EonX\EasyPipeline\Provider\PipelineNameAwareProviderTrait;
 
-final class PipelineNameAwareMiddlewareProviderStub implements MiddlewareProviderInterface, PipelineNameAwareInterface
+final class PipelineNameAwareProviderMiddlewareProviderStub implements
+    MiddlewareProviderInterface,
+    PipelineNameAwareProviderInterface
 {
-    use PipelineNameAwareTrait;
+    use PipelineNameAwareProviderTrait;
 
     public function actAsMiddleware(mixed $input, Closure $next): string
     {

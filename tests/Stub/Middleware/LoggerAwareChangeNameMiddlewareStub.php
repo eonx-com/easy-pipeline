@@ -1,15 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace EonX\EasyPipeline\Tests\Stub\Logger;
+namespace EonX\EasyPipeline\Tests\Stub\Middleware;
 
 use EonX\EasyPipeline\Logger\MiddlewareLoggerAwareInterface;
 use EonX\EasyPipeline\Logger\MiddlewareLoggerAwareTrait;
 use EonX\EasyPipeline\Middleware\MiddlewareInterface;
 use EonX\EasyPipeline\Tests\Stub\Input\InputStub;
-use EonX\EasyPipeline\Tests\Stub\Middleware\ChangeNameMiddlewareStub;
 
-final class LoggerChangeNameMiddlewareStub implements MiddlewareInterface, MiddlewareLoggerAwareInterface
+final class LoggerAwareChangeNameMiddlewareStub implements MiddlewareInterface, MiddlewareLoggerAwareInterface
 {
     use MiddlewareLoggerAwareTrait;
 
